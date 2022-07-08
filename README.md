@@ -23,24 +23,32 @@ I couldn't create or even implement these features so quickly without the origin
 
 
 
-Layout prototype created in Figma by Yanka Darelova:
 
-Link: https://www.figma.com/community/file/1100794861710979147
 
-------
+* Layout prototype created in Figma by Yanka Darelova:
 
-JS function to toggle CSS stylesheet by Andrew Mark Rice:
-
-Link: https://codepen.io/andrewmarkrice/pen/ZEaMjrY
+​	Link: https://www.figma.com/community/file/1100794861710979147
 
 ------
 
-Equalizer CSS Animation by Thomas Eynaud:
 
-Link: https://codepen.io/gauldo/pen/MdOoOZ
+
+* JS function to toggle CSS stylesheet by Andrew Mark Rice:
+
+​	Link: https://codepen.io/andrewmarkrice/pen/ZEaMjrY
 
 ------
 
-CSS Glowing border animation by Deepak Kumar:
 
-Link: https://codepen.io/deepak_96/pen/ExNLEpY
+
+* Equalizer CSS Animation by Thomas Eynaud:
+
+​	Link: https://codepen.io/gauldo/pen/MdOoOZ
+
+------
+
+
+
+* CSS Glowing border animation by Deepak Kumar:
+
+​	Link: https://codepen.io/deepak_96/pen/ExNLEpY
