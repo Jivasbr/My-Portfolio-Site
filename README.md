@@ -15,7 +15,13 @@ https://jivasbr.github.io/My-Portfolio-Site/
 
    
 
-2.  07/10/2022 - I decided to replace the dark/light mode buttons with a switch instead.
+2. 07/10/2022 - I decided to replace the dark/light mode buttons with a switch instead.
+
+   
+
+3. 07/20/2022 - Implemented a tab system with Javascript for content navigation.
+
+   * Adjustments needed to optimize the buttons in the dark theme.
 
 
 
@@ -46,3 +52,7 @@ I couldn't create or even implement these features so quickly without the origin
 * Switch Button:
 
 ​	Link: https://codepen.io/billyysea/pen/ndzGXm
+
+* Tabs:
+
+​	Link: https://www.w3schools.com/howto/howto_js_tabs.asp

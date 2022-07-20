@@ -38,7 +38,6 @@ ul li {
 
 body{
   background-image: url('bg2.png');
-  background-position: center;
   background-size: 120%;
   background-color: #e2e2e2;
   backdrop-filter: blur(4px);
@@ -49,15 +48,6 @@ body{
   margin-right: 4%;
   margin-bottom: 1%;
 }
-.flex-container{
-  display: flex;
-}
-
-.flex-container h2{
-  font-size: 14px;
-  font-weight: 400;
-  color: #AEAEAE;
-}
 
 /*Inicio do topo*/
 header{
@@ -65,7 +55,59 @@ header{
   font-weight: 400;
 }
 
+div.tab {
+overflow:hidden;
+border: none;    
+position:sticky;
+border-top-right-radius: 8px;
+}
+
+.tab h2{
+font-size: 14px;
+font-weight: 400;
+color: #AEAEAE;
+}
+
+button li:checked{
+color: #4CB7F5;
+}
+/* Style the buttons inside the tab */
+div.tab button {
+border-style: none;
+cursor: pointer;
+transition: 0.3s;
+margin-right: 1px;
+background-color: rgba(255, 255, 255, 0.4);
+
+}
+
+/* Change background color of buttons on hover */
+div.tab button:hover {
+background-color: rgba(255, 255, 255, 0.2);
+box-shadow: inset 0px -4px 0px #AEAEAE;
+transition: all 0.3s ease-in; 
+}
+
+/* Create an active/current tablink class */
+div.tab button.active {
+box-shadow: inset 0px -6px 0px #4CB7F5;
+background-color: rgba(255, 255, 255, 0.1);
+transition: all 0.3s ease-in;
+}
+
+/* Style Font of Btns */
+
+button li{
+color: #aeaeae;
+text-shadow: 1px 1px 0px #ffffff; 
+}
+
+button li:hover {
+color: #4CB7F5;
+}
+
 .menu{
+  display: flex;
   align-items: center;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
@@ -80,15 +122,6 @@ header{
   display: flex;
   justify-content:space-between;
   align-items: center;
-  background-color: rgba(255, 255, 255, 0.4);
-  margin-right: 1px;
-}
-
-.li-topo:hover{
-    background-color: rgba(255, 255, 255, 0.7);
-    box-shadow: inset 0px -4px 0px #4CB7F5;
-    transition: all 0.3s ease-in; 
-    color: #4CB7F5;
 }
 
 .li-topo-final{
@@ -98,14 +131,6 @@ header{
     height: 50px;
     justify-content:space-between;
     align-items: center;
-    background-color: rgba(255, 255, 255, 0.4);
-}
-
-.li-topo-final:hover{
-    background-color: rgba(255, 255, 255, 0.7);
-    box-shadow: inset 0px -4px 0px #4CB7F5;
-    transition: all 0.3s ease-in;
-    color: #4CB7F5;
 }
 
 .list-items{
@@ -118,11 +143,6 @@ header{
   display: flex;
   text-align: center;
   align-items:flex-start;
-}
-
-a.linktopo:link {
-transition: 0.2s ease; /*Aplicamos um efeito de transição*/
-text-decoration: none; /*Removemos o sublinhado*/
 }
 
 .fg-0{
@@ -146,7 +166,7 @@ text-decoration: none; /*Removemos o sublinhado*/
   align-items: center;
   background-color: rgba(255, 255, 255, 0.4);
   padding-left: 20px;
-  margin-right: 1px;
+  margin-inline: 1px;
 }
 
 #canvas{
@@ -254,18 +274,30 @@ input:checked + .slider-v1::before {
 
 /*Inicio do Corpo*/
 
-  .corpo{
-      min-height: 700px;
-      height: 100%;
-      display: flex;
-      justify-content: center;
-      font-size: 14px;
-      font-weight: 400;
-      flex-flow: row wrap;
-      border-left: 1px solid rgba(255, 255, 255, 0.4);
-      border-right: 1px solid rgba(255, 255, 255, 0.4);
-   }
-  
+.tabcontent {
+display:none;
+}
+
+content::before{
+position: fixed;
+content: "";
+top: 50px;
+left: 1px;
+height: 700px;
+width: 99.7%;
+border-left: 1px solid #fff;
+border-right: 1px solid #fff;
+}
+
+.hellocontent{
+min-height: 700px;
+height: 100%;
+display: flex;
+justify-content: center;
+font-size: 14px;
+font-weight: 400;
+flex-flow: row wrap;
+}
 
   .esquerda{
       height: 100%;
@@ -415,8 +447,21 @@ header{
   font-weight: 400;
 }
 
+.flex-container{
+display: flex;
+}
+
+.flex-container h2{
+font-size: 14px;
+font-weight: 400;
+color: #B5B5B5;
+}
 
 .footer{
+  position:fixed;
+  top: 750px;
+  width: 99.9%;
+  display:flex;
   text-shadow: 1px 1px 0px #ffffff;
   align-items: center;
   border-bottom-left-radius: 8px;

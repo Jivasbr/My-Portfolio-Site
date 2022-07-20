@@ -16,3 +16,21 @@ console.log(theme);
         theme.setAttribute('href', './style2.css');
     }
 }
+
+
+
+function openMenuLink(evt, menuName) {
+    var i, tabcontent, linktopo;
+
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    linktopo = document.getElementsByClassName("linktopo");
+    for (i = 0; i < linktopo.length; i++) {
+        linktopo[i].className = linktopo[i].className.replace(" active", "");
+    }
+    document.getElementById(menuName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
