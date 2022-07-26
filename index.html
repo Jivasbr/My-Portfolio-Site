@@ -2,13 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" id="estilo" type="text/css"  href="./style2.css"/>
+    <link rel="stylesheet" id="estilo" type="text/css"  href="style.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600&display=swap" rel="stylesheet"> 
-    <script  src="./scripts.js"></script>
     <title>Jivas Dev Portfolio</title>
 </head>
 <body>
@@ -16,18 +15,17 @@
 <!-- copia -->
 
 <!-- fim copia -->
-
     <content>
 
     <!-- Inicio Menu -->
-    <header>
-        <div class="tab">    
+    <div class="tab">
+    <header>    
             <div class="menu">
                 <ul class="list-items">
                     <div class="items fg-2">jivago-januario</div>
-                    <button class="linktopo" onclick="openMenuLink(event, 'hello')"><div class="items fg-0"><li class="li-topo">_hello</li></div></button>
-                    <button class="linktopo" onclick="openMenuLink(event, 'about')" active><div class="items fg-0"><li class="li-topo">_about-me</li></div></button>
-                    <button class="linktopo" onclick="openMenuLink(event, 'projects')"><div class="items fg-0"><li class="li-topo">_projects</li></div></button>
+                    <a href="javascript:void(0)" onclick="openMenuLink(event, 'hello')" class="linktopo active"><div class="items fg-0 active"><li class="li-topo">_hello</li></div></a>
+                    <a href="javascript:void(0)" onclick="openMenuLink(event, 'about')" class="linktopo"><div class="items fg-0"><li class="li-topo">_about-me</li></div></a>
+                    <a href="javascript:void(0)" onclick="openMenuLink(event, 'projects')" class="linktopo"><div class="items fg-0"><li class="li-topo">_projects</li></div></a>
                     <div class="items fg-3"></div>
                     <div class="items fg-4">
                         
@@ -39,19 +37,18 @@
                         </div><!--/wrap-->
                     
                     </div>
-                    <button class="linktopo" onclick="openMenuLink(event, 'contact')"><div class="items fg-0"><li class="li-topo-final">_contact-me</li></div></div>
-                </ul>
-            </div>
-        </div>    
+                    <a href="javascript:void(0)" onclick="openMenuLink(event, 'contact')" class="linktopo li-topo-final"><div class="items fg-0"><li class="li-topo-final">_contact-me</li></div></a>
+                </ul>  
+            </div>  
     </header>
     <!-- Fim Menu -->
 
     <!-- Inicio hello -->
-    <div id="hello" class="tabcontent" data-ng-click="hello">
+    <div id="hello" class="tab tabcontent active">
         <div class="hellocontent">
             <div class="esquerda">
                 <div>Hi all. I am</div>
-                <div><h1>Jivago Januário</h1></div>
+                <div class="wrapper"><h1 class="glitch">Jivago Januário</h1></div>
                 <div><h2>> Systems Analysis and Development Student</h2></div>
                 <div><p></p></div>
                 <div>// you can also see my Github page</div>
@@ -179,7 +176,21 @@
                 </div>
                 <div class="glow">
                 <div class="bg">
-                <div class="retangulo-3">                {
+                <div class="retangulo-3">
+                    <pre id="typewriter">
+                        var object = {
+                            name: 'Foo',
+                            type: 'Bar',
+                            location: 'Earth',
+                            properties:['Javascript',
+                                        'HTML',
+                                        'CSS'];
+                        };</pre>
+                </div>
+                </div>
+                </div>
+                <div class="retangulo-2"></div>
+                <div class="retangulo-4">                    {
                     "files.autoSave": "afterDelay",
                     "editor.fontSize": 22,
                     "files.autoSaveDelay": 500,
@@ -189,11 +200,8 @@
                     
                         "editor.quickSuggestions": {
                             "strings": true
+                    
                 </div>
-                </div>
-                </div>
-                <div class="retangulo-2"></div>
-                <div class="retangulo-4"></div>
             </div>
         </div>
     </div>
@@ -201,39 +209,251 @@
     
 
     <!-- Inicio About-me -->
-    <div id="about" class="tabcontent" data-ng-click="about">
+    <div id="about" class="tab tabcontent" style="display:none">
         <div class="hellocontent">
-
-        <div class="esquerda">
-            <div>Hi all. I am</div>
-            <div><h1>Jivago Januário</h1></div>
-            <div><h2>> Systems Analysis and Development Student</h2></div>
-            <div><p></p></div>
-            <div>// you can also see my Github page</div>
-            <div>const githublink = <a href="https://github.com/Jivasbr" target="_blank">"https://github.com/Jivasbr"</a></div>
         
-        </div>
-        <div class="direita">
-            <div class="retangulo-1">
-                {
-                    "files.autoSave": "afterDelay",
-                    "editor.fontSize": 22,
-                    "files.autoSaveDelay": 500,
-                    "useCodeSnippetsOnFunctionSuggest": true,
+            <div class="aboutcontent">
+            <!--inicio MenuNavIcons-->
+                <nav role="navigation" class="accordion-menu-nav">
+                    <a
+                    href="#menu-parent-1"
+                    class="accordion-menu-nav__link"
+                    data-accordion-menu-nav>
+                    <img src="./icons/icon_hobbies.png">
+                    </a>
+                    <a
+                    href="#menu-parent-2"
+                    class="accordion-menu-nav__link"
+                    data-accordion-menu-nav>
+                    <img src="./icons/icon_personal_info.png">
+                    </a>
+                    <a
+                    href="#menu-parent-3"
+                    class="accordion-menu-nav__link"
+                    data-accordion-menu-nav>
+                    <img src="./icons/icon_prof.png">
+                    </a>            
+                </nav><!--Fim MenuNavIcons-->
+
+                <!--inicio sub-menu accordion -->
+                <div class="accordion-menu-wrapper" id="menu-parent-1" data-accordion-wrapper><!--inicio menu hobbies (1) -->
+                    <nav role="navigation" class="accordion-menu">
+                    <ul class="accordion-menu__list">
+                        <li class="accordion-menu__item">
+                            <a href="#" class="accordion-menu__link">
+                                Submenu item 123
+                            </a>
+                            </li>        
+                            <li class="accordion-menu__item">
+                            <a href="#" class="accordion-menu__link">
+                                Submenu item 456
+                            </a>
+                            </li>
+                            <li class="accordion-menu__item">
+                            <a href="#" class="accordion-menu__link">
+                                Submenu item 789
+                            </a>
+                            </li>
+                    </ul>
+                    </nav>
+                </div><!--fim sub-menu hobbies (1) -->
                 
-                    "[json]": {
+                <div class="accordion-menu-wrapper active" id="menu-parent-2" data-accordion-wrapper><!--inicio menu personal (2)-->
+                    <nav role="navigation" class="accordion-menu">
+                    <ul class="accordion-menu__list">
+                        <li class="accordion-menu__item">
+                            <a
+                                href="#menu-1"
+                                class="accordion-menu__link"
+                                data-accordion-menu>
+                                <span class="accordion-menu__icon"></span>
+                                <span>
+                                personal-info
+                                </span>
+                            </a>
+                            <ul class="accordion-menu__sublist accordion-menu--hidden" id="menu-1"><!--menu escondido-->
+                                <li>
+                                <a href="javascript:void(0)" onclick="openAccordionLink(event, 'bio')" class="accordion-menu__sublink linkside active" data-accordion-menu><img src="./icons/folder_yellow.png">
+                                    bio
+                                </a>
+                                </li>
+                                <li>
+                                <a href="javascript:void(0)" onclick="openAccordionLink(event, 'interests')" class="accordion-menu__sublink linkside" data-accordion-menu><img src="./icons/folder_blue.png">
+                                    interests
+                                </a>
+                                </li>
+                                <li>
+                                <a
+                                    href="#menu-1-1"
+                                    class="accordion-menu__link"
+                                    data-accordion-menu>
+                                    <span class="accordion-menu__icon2"></span>
+                                    <span><img src="./icons/folder_green.png">
+                                    education
+                                    </span>
+                                </a>
+                                <div id="firstsublink">
+                                <ul class="accordion-menu__sublist accordion-menu--hidden" id="menu-1-1">
+                                    <li>
+                                    <a href="javascript:void(0)" onclick="openAccordionLink(event, 'high-school')" class="linkside" data-accordion-menu><img src="./icons/folder_general.png">
+                                        courses
+                                    </a>
+                                    </li>
+                                    <li>
+                                    <a href="javascript:void(0)" onclick="openAccordionLink(event, 'university')" class="linkside" data-accordion-menu><img src="./icons/folder_general.png">
+                                        college
+                                    </a>
+                                    </li>
+                                </ul>
+                                </div>
+                                </li>
+                            </ul>
+                            </li>
+                            <li class="accordion-menu__item">
+                            <a
+                                href="#menu-2"
+                                class="accordion-menu__link"
+                                data-accordion-menu>
+                                <span class="accordion-menu__icon"></span>
+                                <span>
+                                contacts
+                                </span>
                     
-                        "editor.quickSuggestions": {
-                            "strings": true
+                            </a>
+                            <ul class="accordion-menu__sublist accordion-menu--hidden" id="menu-2">
+                                <li class="end">
+                                <a href="#"><img src="./icons/little_email.png">
+                                    jivago.januario@outlook.com
+                                </a>
+                                </li>
+                                <li class="end endline">
+                                <a href="#"><img src="./icons/little_phone.png">
+                                    +5519994270374
+                                </a>
+                                </li>
+                            </li>        
+                    </ul>
+                    </nav>
+                </div><!--fim menu personal (2) -->  
+                
+                <div class="accordion-menu-wrapper" id="menu-parent-3" data-accordion-wrapper><!--inicio menu professional(3)-->
+                    <nav role="navigation" class="accordion-menu">
+                    <ul class="accordion-menu__list">
+                        <li class="accordion-menu__item">
+                        <a href="#" class="accordion-menu__link">
+                            Submenu item 987
+                        </a>
+                        </li>        
+                        <li class="accordion-menu__item">
+                        <a href="#" class="accordion-menu__link">
+                            Submenu item 6554
+                        </a>
+                        </li>       
+                    </ul>
+                    </nav>
+                </div><!--fim menu professional (3) -->     
+            
+                <!--inicio do contéudo dentro de about-me-->
+                <div class="inneraboutcontent">
+                    
+                    <!--Inicio do conteúdo personal info-->
+                    <div id="personal-info">
+                        <div id="bio"         class="tabaccordioncontent active">
+                            <div class="inner4x4">
+                                <div class="inner-4x4-esquerda">
+                                    <div class="em-cima">
+                                        <span class="closeX">bio</span>
+                                    </div>
+                                
+                                    <div class="em-baixo"><div class="textinside_embaixo">
+                                        <div style="padding-left: 8px; display: flex; flex-direction: row;">1<div style="margin-left: 42px;">/**</div></div>
+                                        <div style="padding-left: 8px; display: flex; flex-direction: row;">2<div class="decoration">*</div><div class="content-text">About me</div></div>
+                                        <div style="padding-left: 8px; display: flex; flex-direction: row;">3<div class="decoration">*</div><div class="content-text">I have past еxperience in web</div></div>
+                                        <div style="padding-left: 8px; display: flex; flex-direction: row;">4<div class="decoration">*</div><div class="content-text">design lorem ipsum dolor sit amet,</div></div>
+                                        <div style="padding-left: 8px; display: flex; flex-direction: row;">5<div class="decoration">*</div><div class="content-text">consectetur adipiscing elit, sed do eiusmod</div></div>
+                                        <div style="padding-left: 8px; display: flex; flex-direction: row;">6<div class="decoration">*</div><div class="content-text">tempor incididunt ut labore et dolore</div></div>
+                                        <div style="padding-left: 8px; display: flex; flex-direction: row;">7<div class="decoration">*</div><div class="content-text">magna aliqua. Ut enim ad minim veniam,</div></div>
+                                        <div style="padding-left: 8px; display: flex; flex-direction: row;">8<div class="decoration">*</div><div class="content-text">quis nostrud exercitation ullamco laboris</div></div>
+                                        <div style="padding-left: 8px; display: flex; flex-direction: row;">9<div class="decoration">*</div><div class="content-text">nisi ut aliquip ex ea commodo consequat.</div></div>
+                                        <div style="display: flex; flex-direction: row;">10<div class="decoration">*</div><div class="content-text">Duis aute irure dolor in reprehenderit in</div></div>
+                                        <div style="display: flex; flex-direction: row;">11<div class="decoration">*</div><div class="content-text"></div></div>
+                                        <div style="display: flex; flex-direction: row;">12<div class="decoration">*</div><div class="content-text">Duis aute irure dolor in reprehenderit in</div></div>
+                                        <div style="display: flex; flex-direction: row;">13<div class="decoration">*</div><div class="content-text">voluptate velit esse cillum dolore eu fugiat</div></div>
+                                        <div style="display: flex; flex-direction: row;">14<div class="decoration">*</div><div class="content-text">nulla pariatur. Excepteur sint occaecat</div></div>
+                                        <div style="display: flex; flex-direction: row;">15<div class="decoration">*</div><div class="content-text">officia deserunt mollit anim id est laborum.</div></div>
+                                        <div style="display: flex; flex-direction: row;">16<div style="margin-left: 49px;">*/</div></div>
+                                    </div></div>
+                                </div>
+                                <div class="inner-4x4-direita">
+                                <div class="em-cima"><span></span></div>
+                                
+                                <div class="em-baixo">
+                                <div style="height: 99%;">
+                                    <p style="font-size: 12px; text-align:left; padding-left: 26px; padding-top: 20px;">// Code snippet showcase:</p>
+                                    <div style="width: 99%; height:94%; display: flex; flex-direction: column; justify-content:space-between; align-items: center;">
+                                        <div style="font-size: 11px; width: 90%; display: flex; flex-direction:row; justify-content: left; margin-top: 5%;">
+                                        <div class="borderphoto"><div class="glowphoto"><div class="profilephoto"></div></div></div>
+                                        <div style="display: flex; flex-direction:column; justify-content: center;">
+                                            <div>@Jivasbr</div>
+                                            <div style="font-size: 10px">Created 2 months ago</div>
+                                        </div>
+                                        </div>
+                                        <div class="retangulo-5">
+                                            <span style="width: 94%">
+                                                <ul style="list-style: none; display: flex; flex-direction: column; padding-left: 20px;">
+                                            <li style="margin-left: -12px">function initializeModelChunk<T>>(chunk: ResolvedModelChunk): T {</li>
+                                            <li>value: T = parseModel(chunk._response, chunk._value);</li>
+                                            <li>const initializedChunk: InitializedChunk<T> = (chunk: any);</li>
+                                            <li>initializedChunk._status = INITIALIZED;</li>
+                                            <li>initializedChunk._value = value;</li>
+                                            <li>return value;</li>
+                                            <li style="margin-left: -12px">}</li>
+                                                </ul>
+                                            </span>
+                                        </div>
+                                        <div id="simpleline"></div>
+                                        <div style="font-size: 10px; width: 60%; margin-right: 30%;">My work here was 2 months ago. It was for the project called “...”. Some other text can be placed here.</div>
+                                        <div style="font-size: 11px; width: 90%; display: flex; flex-direction:row; justify-content: left; margin-top: 4%;">
+                                            <div class="borderphoto"><div class="glowphoto"><div class="profilephoto"></div></div></div>
+                                            <div style="display: flex; flex-direction:column; justify-content: center;">
+                                                <div>@Jivasbr</div>
+                                                <div style="font-size: 10px">Created 2 months ago</div>
+                                            </div>
+                                            </div>
+                                        <div class="retangulo-5">
+                                            <span style="width: 94%">
+                                                <ul style="list-style: none; display: flex; flex-direction: column; padding-left: 20px;">
+                                            <li style="margin-left: -12px">function initializeModelChunk<T>>(chunk: ResolvedModelChunk): T {</li>
+                                            <li>value: T = parseModel(chunk._response, chunk._value);</li>
+                                            <li>const initializedChunk: InitializedChunk<T> = (chunk: any);</li>
+                                            <li>initializedChunk._status = INITIALIZED;</li>
+                                            <li>initializedChunk._value = value;</li>
+                                            <li>return value;</li>
+                                            <li style="margin-left: -12px">}</li>
+                                                </ul>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                                </div>
+                                </div>
+                        </div>
+                        <div id="interests"   class="tabaccordioncontent" style="display:none">Y</div>
+                        <div id="high-school" class="tabaccordioncontent" style="display:none">W</div>
+                        <div id="university"  class="tabaccordioncontent" style="display:none">Z</div>
+                    </div>
+                    <!--Fim do conteúdo personal info-->
+                </div> 
+                <!--Fim do conteúdo dentro de about-me-->
             </div>
         </div>
-        </div>
-    </div>
+    </div> 
     <!-- Fim About-me -->
     
 
     <!-- Inicio Projects -->
-    <div id="projects" class="tabcontent" data-ng-click="projects">
+    <div id="projects" class="tab tabcontent" style="display:none">
         <div class="hellocontent">
         <div class="esquerda">
             <div class="retangulo-1">
@@ -255,27 +475,149 @@
 
 
     <!-- Inicio Contact-me -->
-    <div id="contact" class="tabcontent" data-ng-click="contact">
-        <div class="hellocontent"></div>
-    </div>
+    <div id="contact" class="tab tabcontent">
+        <div class="hellocontent">
+        
+            <div class="aboutcontent">
+                    
+                <div class="accordion-menu-wrapper active" id="menu-parent-2" data-accordion-wrapper style="width: 15%;"><!--inicio menu personal (2)-->
+                    <nav role="navigation" class="accordion-menu">
+                    <ul class="accordion-menu__list">
+                            <li class="accordion-menu__item">
+                            <a
+                                href="#menu-4"
+                                class="accordion-menu__link"
+                                data-accordion-menu>
+                                <span class="accordion-menu__icon"></span>
+                                <span>
+                                contacts
+                                </span>
+                    
+                            </a>
+                            <ul class="accordion-menu__sublist accordion-menu--hidden" id="menu-4" style="width: 100%;">
+                                <li class="end">
+                                <a href="#"><img src="./icons/little_email.png" data-accordion-menu>
+                                    jivago.januario@outlook.com
+                                </a>
+                                </li>
+                                <li class="end endline">
+                                <a href="#"><img src="./icons/little_phone.png" data-accordion-menu>
+                                    +5519994270374
+                                </a>
+                                </li>     
+                            </ul>
+                        </li>
+                    </ul>
+                    </nav>
+                    </div><!--fim menu contacts --> 
+                    
+                    <div id="personal-info">
+                        <div id="contacts"         class="tabaccordioncontent active">
+                            <div class="inner4x4">
+                                <div class="inner-4x4-esquerda">
+                                    <div class="em-cima">
+                                        <span class="closeX">contacts</span>
+                                    </div>
+                                
+                                    <div class="em-baixo"><div class="textinside_embaixo">
+                                        <div style="padding-left: 8px; display: flex; flex-direction: row;">1<div style="margin-left: 42px;">/**</div></div>
+                                        <div style="padding-left: 8px; display: flex; flex-direction: row;">2<div class="decoration">*</div><div class="content-text">About me</div></div>
+                                        <div style="padding-left: 8px; display: flex; flex-direction: row;">3<div class="decoration">*</div><div class="content-text">I have past еxperience in web</div></div>
+                                        <div style="padding-left: 8px; display: flex; flex-direction: row;">4<div class="decoration">*</div><div class="content-text">design lorem ipsum dolor sit amet,</div></div>
+                                        <div style="padding-left: 8px; display: flex; flex-direction: row;">5<div class="decoration">*</div><div class="content-text">consectetur adipiscing elit, sed do eiusmod</div></div>
+                                        <div style="padding-left: 8px; display: flex; flex-direction: row;">6<div class="decoration">*</div><div class="content-text">tempor incididunt ut labore et dolore</div></div>
+                                        <div style="padding-left: 8px; display: flex; flex-direction: row;">7<div class="decoration">*</div><div class="content-text">magna aliqua. Ut enim ad minim veniam,</div></div>
+                                        <div style="padding-left: 8px; display: flex; flex-direction: row;">8<div class="decoration">*</div><div class="content-text">quis nostrud exercitation ullamco laboris</div></div>
+                                        <div style="padding-left: 8px; display: flex; flex-direction: row;">9<div class="decoration">*</div><div class="content-text">nisi ut aliquip ex ea commodo consequat.</div></div>
+                                        <div style="display: flex; flex-direction: row;">10<div class="decoration">*</div><div class="content-text">Duis aute irure dolor in reprehenderit in</div></div>
+                                        <div style="display: flex; flex-direction: row;">11<div class="decoration">*</div><div class="content-text"></div></div>
+                                        <div style="display: flex; flex-direction: row;">12<div class="decoration">*</div><div class="content-text">Duis aute irure dolor in reprehenderit in</div></div>
+                                        <div style="display: flex; flex-direction: row;">13<div class="decoration">*</div><div class="content-text">voluptate velit esse cillum dolore eu fugiat</div></div>
+                                        <div style="display: flex; flex-direction: row;">14<div class="decoration">*</div><div class="content-text">nulla pariatur. Excepteur sint occaecat</div></div>
+                                        <div style="display: flex; flex-direction: row;">15<div class="decoration">*</div><div class="content-text">officia deserunt mollit anim id est laborum.</div></div>
+                                        <div style="display: flex; flex-direction: row;">16<div style="margin-left: 49px;">*/</div></div>
+                                    </div></div>
+                                </div>
+                                <div class="inner-4x4-direita">
+                                <div class="em-cima"><span></span></div>
+                                
+                                <div class="em-baixo">
+                                <div style="height: 99%;">
+                                    <p style="font-size: 12px; text-align:left; padding-left: 26px; padding-top: 20px;">// Code snippet showcase:</p>
+                                    <div style="width: 99%; height:94%; display: flex; flex-direction: column; justify-content:space-between; align-items: center;">
+                                        <div style="font-size: 11px; width: 90%; display: flex; flex-direction:row; justify-content: left; margin-top: 5%;">
+                                        <div class="profilephoto"></div>
+                                        <div style="display: flex; flex-direction:column; justify-content: center;">
+                                            <div>@Jivasbr</div>
+                                            <div style="font-size: 10px">Created 2 months ago</div>
+                                        </div>
+                                        </div>
+                                        <div class="retangulo-5">
+                                            <span style="width: 94%">
+                                                <ul style="list-style: none; display: flex; flex-direction: column; padding-left: 20px;">
+                                            <li style="margin-left: -12px">function initializeModelChunk<T>>(chunk: ResolvedModelChunk): T {</li>
+                                            <li>value: T = parseModel(chunk._response, chunk._value);</li>
+                                            <li>const initializedChunk: InitializedChunk<T> = (chunk: any);</li>
+                                            <li>initializedChunk._status = INITIALIZED;</li>
+                                            <li>initializedChunk._value = value;</li>
+                                            <li>return value;</li>
+                                            <li style="margin-left: -12px">}</li>
+                                                </ul>
+                                            </span>
+                                        </div>
+                                        <div id="simpleline"></div>
+                                        <div style="font-size: 10px; width: 60%; margin-right: 30%;">My work here was 2 months ago. It was for the project called “...”. Some other text can be placed here.</div>
+                                        <div style="font-size: 11px; width: 90%; display: flex; flex-direction:row; justify-content: left; margin-top: 4%;">
+                                            <div class="profilephoto"></div>
+                                            <div style="display: flex; flex-direction:column; justify-content: center;">
+                                                <div>@Jivasbr</div>
+                                                <div style="font-size: 10px">Created 2 months ago</div>
+                                            </div>
+                                            </div>
+                                        <div class="retangulo-5">
+                                            <span style="width: 94%">
+                                                <ul style="list-style: none; display: flex; flex-direction: column; padding-left: 20px;">
+                                            <li style="margin-left: -12px">function initializeModelChunk<T>>(chunk: ResolvedModelChunk): T {</li>
+                                            <li>value: T = parseModel(chunk._response, chunk._value);</li>
+                                            <li>const initializedChunk: InitializedChunk<T> = (chunk: any);</li>
+                                            <li>initializedChunk._status = INITIALIZED;</li>
+                                            <li>initializedChunk._value = value;</li>
+                                            <li>return value;</li>
+                                            <li style="margin-left: -12px">}</li>
+                                                </ul>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                                </div>
+                                </div>
+                        </div>
+                    </div>
+            </div>
+        </div>   
+    </div>            <!--Fim do conteúdo contacts-->
     <!-- Fim Contact-me -->
 
+    </div>
+
     </content>
-    
-    <!-- Inicio Rodapé -->
-    <footer>
-        <div class="flex-container footer">
-            <ul class="list-items-footer">
-                <div class="fg-5">find me in:</div>
-                <a href="https://www.behance.net/jivagoj" target="_blank"><div class="fg-6"><li class="li-footer"><div class="icons"><img class="behance" src="icons/behance-fill2.png"/></div></li></div></a>
-                <a href="http://linkedin.com/in/jivagojanuario/" target="_blank"><div class="fg-6"><li class="li-footer"><div class="icons"><img class="linkedin" src="icons/linkedin-fill2.png"/></div></li></div></a>
-                <div class="fg-3"></div>
-                <a href="https://github.com/Jivasbr" target="_blank"><div class="fg-1"><li class="li-footer-final">@Jivasbr<div class="icons"><img class="git-hub" src="icons/github-fill2.png"/></div></li></div></a>
-            </ul>
-        </div>
-    </footer>
-    <!-- Fim Rodapé -->
 
 
+
+        <!-- Inicio Rodapé -->
+        <footer>
+            <div class="tab footer">
+                <ul class="list-items-footer">
+                    <div class="fg-5">find me in:</div>
+                    <a href="https://www.behance.net/jivagoj" target="_blank"><div class="fg-6"><li class="li-footer"><div class="icons"><img class="behance" src="icons/behance-fill2.png"/></div></li></div></a>
+                    <a href="http://linkedin.com/in/jivagojanuario/" target="_blank"><div class="fg-6"><li class="li-footer"><div class="icons"><img class="linkedin" src="icons/linkedin-fill2.png"/></div></li></div></a>
+                    <div class="fg-3"></div>
+                    <a href="https://github.com/Jivasbr" target="_blank"><div class="fg-1"><li class="li-footer-final">@Jivasbr<div class="icons"><img class="git-hub" src="icons/github-fill2.png"/></div></li></div></a>
+                </ul>
+            </div>
+        </footer>
+        <!-- Fim Rodapé -->  
+        <script  src="./scripts.js"></script>  
 </body>
 </html>
