@@ -1,7 +1,7 @@
 // About-me Accordion
 
 var accordionMenu = function () {
-            
+
   /**
   * Element.closest() polyfill
   * https://developer.mozilla.org/en-US/docs/Web/API/Element/closest#Polyfill
@@ -64,13 +64,13 @@ var accordionMenu = function () {
       target.classList.remove('active');
       return;
     }
-    
+
     // Get all open accordion content, loop through it, and close it
     var accordions = document.querySelectorAll('[data-accordion-wrapper]');
     for (var i = 0; i < accordions.length; i++) {
       accordions[i].classList.remove('active');
     }
-    
+
     // Toggle our content
     target.classList.toggle('active');
   });
@@ -84,19 +84,19 @@ accordionMenu();
 // Dark mode
 
 function swapStyleSheet() {
-    // Obtains an array of all <link>
-    // elements.
-    // Select your element using indexing.
-var theme = document.getElementById('estilo');
-console.log(theme);
+  // Obtains an array of all <link>
+  // elements.
+  // Select your element using indexing.
+  var theme = document.getElementById('estilo');
+  console.log(theme);
 
-    // Change the value of href attribute 
-    // to change the css sheet.
-    if (theme.getAttribute('href') == './assets/css/style2.css') {
-        theme.setAttribute('href', './assets/css/style.css');
-    } else {
-        theme.setAttribute('href', './assets/css/style2.css');
-    }
+  // Change the value of href attribute 
+  // to change the css sheet.
+  if (theme.getAttribute('href') == './assets/css/style2.css') {
+    theme.setAttribute('href', './assets/css/style.css');
+  } else {
+    theme.setAttribute('href', './assets/css/style2.css');
+  }
 }
 
 
@@ -105,19 +105,19 @@ console.log(theme);
 // Tab
 
 function openMenuLink(evt, menuName) {
-    var i, tabcontent, linktopo;
+  var i, tabcontent, linktopo;
 
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-    }
-    linktopo = document.getElementsByClassName("linktopo");
-    for (i = 0; i < linktopo.length; i++) {
-        linktopo[i].className = linktopo[i].className.replace(" active", "");
-    }
-    document.getElementById(menuName).style.display = "block";
-    evt.currentTarget.firstElementChild.className += " active";
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
   }
+  linktopo = document.getElementsByClassName("linktopo");
+  for (i = 0; i < linktopo.length; i++) {
+    linktopo[i].className = linktopo[i].className.replace(" active", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " active";
+}
 
 
 
@@ -149,71 +149,72 @@ function setupTypewriter(t) {
   t.innerHTML = "";
 
   var cursorPosition = 0,
-      tag = "",
-      writingTag = false,
-      tagOpen = false,
-      typeSpeed = 50,
-      tempTypeSpeed = 0;
+    tag = "",
+    writingTag = false,
+    tagOpen = false,
+    typeSpeed = 50,
+    tempTypeSpeed = 0;
 
   var type = function () {
 
-      if (writingTag === true) {
-          tag += HTML[cursorPosition];
-      }
+    if (writingTag === true) {
+      tag += HTML[cursorPosition];
+    }
 
-      if (HTML[cursorPosition] === "<") {
-          tempTypeSpeed = 0;
-          if (tagOpen) {
-              tagOpen = false;
-              writingTag = true;
-          } else {
-              tag = "";
-              tagOpen = true;
-              writingTag = true;
-              tag += HTML[cursorPosition];
-          }
+    if (HTML[cursorPosition] === "<") {
+      tempTypeSpeed = 0;
+      if (tagOpen) {
+        tagOpen = false;
+        writingTag = true;
+      } else {
+        tag = "";
+        tagOpen = true;
+        writingTag = true;
+        tag += HTML[cursorPosition];
       }
-      if (!writingTag && tagOpen) {
-          tag.innerHTML += HTML[cursorPosition];
+    }
+    if (!writingTag && tagOpen) {
+      tag.innerHTML += HTML[cursorPosition];
+    }
+    if (!writingTag && !tagOpen) {
+      if (HTML[cursorPosition] === " ") {
+        tempTypeSpeed = 0;
       }
-      if (!writingTag && !tagOpen) {
-          if (HTML[cursorPosition] === " ") {
-              tempTypeSpeed = 0;
-          }
-          else {
-              //tempTypeSpeed = (Math.random() * typeSpeed) + 50;
-  tempTypeSpeed = 50;
-          }
-          t.innerHTML += HTML[cursorPosition];
+      else {
+        //tempTypeSpeed = (Math.random() * typeSpeed) + 50;
+        tempTypeSpeed = 50;
       }
-      if (writingTag === true && HTML[cursorPosition] === ">") {
-          //tempTypeSpeed = (Math.random() * typeSpeed) + 50;
-  tempTypeSpeed = 50;
-          writingTag = false;
-          if (tagOpen) {
-              var newSpan = document.createElement("span");
-              t.appendChild(newSpan);
-              newSpan.innerHTML = tag;
-              tag = newSpan.firstChild;
-          }
+      t.innerHTML += HTML[cursorPosition];
+    }
+    if (writingTag === true && HTML[cursorPosition] === ">") {
+      //tempTypeSpeed = (Math.random() * typeSpeed) + 50;
+      tempTypeSpeed = 50;
+      writingTag = false;
+      if (tagOpen) {
+        var newSpan = document.createElement("span");
+        t.appendChild(newSpan);
+        newSpan.innerHTML = tag;
+        tag = newSpan.firstChild;
       }
+    }
 
-      cursorPosition += 1;
-      if (cursorPosition < HTML.length - 1) {
+    cursorPosition += 1;
+    if (cursorPosition < HTML.length - 1) {
 
-          setTimeout(type, tempTypeSpeed);
-      }
+      setTimeout(type, tempTypeSpeed);
+    }
 
-if(cursorPosition == HTML.length - 1){
-  setTimeout(reinit, 10000);
-}
+    if (cursorPosition == HTML.length - 1) {
+      setTimeout(reinit, 10000);
+    }
 
 
   };
 
   return {
-      type: type
-  };}
+    type: type
+  };
+}
 
 var typer = document.getElementById('typewriter');
 
@@ -223,29 +224,29 @@ typewriter.type();
 
 
 
-function reinit(){
+function reinit() {
 
-typewriter = setupTypewriter(typer);
+  typewriter = setupTypewriter(typer);
 
-typewriter.type();
+  typewriter.type();
 }
 
 
 
 // Mirror Text Contact Form
 
-var input1 = document.getElementById('input1','input2','input3');
-var mirror1 = document.getElementById('mirror1','mirror2','mirror3');
+var input1 = document.getElementById('input1', 'input2', 'input3');
+var mirror1 = document.getElementById('mirror1', 'mirror2', 'mirror3');
 
-input1.addEventListener('input', function(event) {
+input1.addEventListener('input', function (event) {
   mirror1.innerText = event.target.value.split('').join('');
 });
 
-input2.addEventListener('input', function(event) {
+input2.addEventListener('input', function (event) {
   mirror2.innerText = event.target.value.split('').join('');
 });
 
-input3.addEventListener('input', function(event) {
+input3.addEventListener('input', function (event) {
   mirror3.innerText = event.target.value.split('').join('');
 });
 
@@ -256,14 +257,14 @@ document.getElementById("datetime").innerHTML = dt.toLocaleString();
 
 // Checkbox
 
-function boxOpen(x,y) {
+function boxOpen(x, y) {
   // Get the checkbox
   var checkBox = document.getElementById(x);
   // Get the output text
   var box = document.getElementById(y);
 
   // If the checkbox is checked, display the output text
-  if (checkBox.checked == true){
+  if (checkBox.checked == true) {
     box.style.display = "flex";
   } else {
     box.style.display = "none";
