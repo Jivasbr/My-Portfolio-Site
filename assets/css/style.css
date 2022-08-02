@@ -594,7 +594,7 @@ background-color: rgba(17, 17, 17, 0.1);
     margin-top: -0.4rem;
   }
   .accordion-menu__icon2:before {
-    content:url('../../assets/assets/icons/icon_caret_gray.svg');
+    content:url('../../assets/icons/icon_caret_gray.svg');
     display: block;
     position: absolute;		
     transition: .35s;
