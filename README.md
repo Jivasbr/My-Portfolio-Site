@@ -74,73 +74,73 @@ I couldn't create or even implement these features so quickly without the origin
 
   Link: https://www.figma.com/community/file/1100794861710979147
 
-  
+  <br>
 
 * JS function to toggle CSS stylesheet:
 
   Link: https://codepen.io/andrewmarkrice/pen/ZEaMjrY
 
-  
+  <br>
 
 * Equalizer CSS Animation:
 
   Link: https://codepen.io/gauldo/pen/MdOoOZ
 
-  
+  <br>
 
 * CSS Glowing border animation:
 
   Link: https://codepen.io/deepak_96/pen/ExNLEpY
 
-  
+  <br>
 
 * Switch Button:
 
   Link: https://codepen.io/billyysea/pen/ndzGXm
 
-  
+  <br>
 
 * Tabs:
 
   Link: https://www.w3schools.com/howto/howto_js_tabs.asp
 
-  
+  <br>
 
 * Nested Accordion Menu With Vanilla JS:
 
   Link: https://www.cssscript.com/nested-accordion-menu/
 
-  
+  <br>
 
 * Typing Effect:
 
   Link: https://codepen.io/stevn/pen/jEZvXa
 
-  
+  <br>
 
 * Glitch Effect:
 
   Link: https://codepen.io/rauldronca/pen/zKOaXZ
 
-  
+  <br>
 
 * Checkbox Show/Hide JS:
 
   Link: https://jsfiddle.net/d9v1pj3q/
 
-  
+  <br>
 
 * JS Text Field Mirror:
 
   Link: https://codepen.io/burntcaramel/pen/YGJXrb
 
-  
+  <br>
 
 * CSS Image Filter:
 
   https://css-tricks.com/change-color-of-svg-on-hover/
 
-  
+  <br>
 
 * Form Submit:
 
