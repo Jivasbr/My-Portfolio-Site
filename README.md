@@ -1,5 +1,6 @@
 # My Portfolio Website	
-This is a Portfolio site under construction where I apply the new knowledge I'm acquiring, and in the future, I'll show projects from previous design experiences and future programming projects.
+
+This is a Portfolio site under construction (almost concluded) where I apply the new knowledge I'm acquiring, and in the future, I'll show projects from previous design experiences and future programming projects.
 
 You can see the page in the link below:
 
@@ -11,32 +12,55 @@ https://jivasbr.github.io/My-Portfolio-Site/
 
 ### Development progress:
 
-1. 07/08/2022
+5. 08/01/2022
 
-   * In this early version of the project, a basic homepage structure was created, a general design with 2 animated buttons for dark or light theme options and link buttons for LinkedIn, Github, and Behance. In the future, I will add some more visual details besides implementing the structure and content of the tabs about me, projects, and contact me.
+   * Changed the file format of icons for better display, now a filter effect has been applied when hovering a link with an icon.
 
-   
+   - Implementation of section "projects", and "contact-me".
 
-2. 07/10/2022
+   - In the contact-me section, a small js script was added with input mirroring in the side code snippet. To receive the forms I opted to use the site service: https://formsubmit.co/. A free and simple form submission site.
 
-   * I decided to replace the dark/light mode buttons with a switch instead.
+   - For the menu of the projects section, a checkbox system with specific icons was used, according to the original design of the project in Figma. In the content of the "project boxes", some transition, filter, and enlargement effects were applied with CSS.
 
-   
+   - Other tweaks and fixes have been made for a better overall display.
+   - The site structure is fully implemented.
+     There are many fixes and improvements to be applied beyond the inclusion of all content and the construction and implementation of adjustments for mobile devices. For now, the display is only adjusted for desktops.
+   - I intend to deepen my studies on frameworks and everything that helps to develop better and faster, because at the moment I develop practically from scratch despite having a lot of help from codepen, stackoverflow, and google in general.
 
-3. 07/20/2022
 
-   * Implemented a tab system with Javascript for content navigation.
-   * Adjustments needed to optimize the buttons in the dark theme.
-
-   
 
 4. 07/26/2022 
 
    * Corrected and adjusted some links/buttons on the site in the light and dark versions.
+
    * Added typing animation with Javascript in the center rectangle of the homepage and added glitch effect to the name.
+
    * "About-me" section was created, where accordion menu and wrapper were inserted with a system to display and hide items for display according to the selected content.
-   * Added stylized border to avatar icon 
+
+   * Added stylized border to avatar icon. 
+
    * Started the development of the contact tab where it will be necessary to correct the side menu because when the accordion is hidden in the "about me" tab and we go back to the contact tab, the menu disappears.
+
+
+
+3. 07/20/2022
+
+   * Implemented a tab system with Javascript for content navigation.
+
+   * Adjustments needed to optimize the buttons in the dark theme.
+
+
+
+
+2. 07/10/2022
+   * I decided to replace the dark/light mode buttons with a switch instead.
+
+
+
+1. 07/08/2022
+   * In this early version of the project, a basic homepage structure was created, a general design with 2 animated buttons for dark or light theme options and link buttons for LinkedIn, Github, and Behance. In the future, I will add some more visual details besides implementing the structure and content of the tabs about me, projects, and contact me.
+
+
 
 ------
 
@@ -48,36 +72,76 @@ I couldn't create or even implement these features so quickly without the origin
 
 * Layout prototype created in Figma:
 
-​	Link: https://www.figma.com/community/file/1100794861710979147
+  Link: https://www.figma.com/community/file/1100794861710979147
+
+  
 
 * JS function to toggle CSS stylesheet:
 
-​	Link: https://codepen.io/andrewmarkrice/pen/ZEaMjrY
+  Link: https://codepen.io/andrewmarkrice/pen/ZEaMjrY
+
+  
 
 * Equalizer CSS Animation:
 
-​	Link: https://codepen.io/gauldo/pen/MdOoOZ
+  Link: https://codepen.io/gauldo/pen/MdOoOZ
+
+  
 
 * CSS Glowing border animation:
 
-​	Link: https://codepen.io/deepak_96/pen/ExNLEpY
+  Link: https://codepen.io/deepak_96/pen/ExNLEpY
+
+  
 
 * Switch Button:
 
-​	Link: https://codepen.io/billyysea/pen/ndzGXm
+  Link: https://codepen.io/billyysea/pen/ndzGXm
+
+  
 
 * Tabs:
 
-​	Link: https://www.w3schools.com/howto/howto_js_tabs.asp
+  Link: https://www.w3schools.com/howto/howto_js_tabs.asp
+
+  
 
 * Nested Accordion Menu With Vanilla JS:
 
-​	Link: https://www.cssscript.com/nested-accordion-menu/
+  Link: https://www.cssscript.com/nested-accordion-menu/
+
+  
 
 * Typing Effect:
 
-​	Link: https://codepen.io/stevn/pen/jEZvXa
+  Link: https://codepen.io/stevn/pen/jEZvXa
+
+  
 
 * Glitch Effect:
 
-​	Link: https://codepen.io/rauldronca/pen/zKOaXZ
+  Link: https://codepen.io/rauldronca/pen/zKOaXZ
+
+  
+
+* Checkbox Show/Hide JS:
+
+  Link: https://jsfiddle.net/d9v1pj3q/
+
+  
+
+* JS Text Field Mirror:
+
+  Link: https://codepen.io/burntcaramel/pen/YGJXrb
+
+  
+
+* CSS Image Filter:
+
+  https://css-tricks.com/change-color-of-svg-on-hover/
+
+  
+
+* Form Submit:
+
+  https://www.youtube.com/watch?v=Yg6POD0M30w&t=978s
