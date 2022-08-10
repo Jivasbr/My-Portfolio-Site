@@ -270,3 +270,5 @@ function boxOpen(x, y) {
     box.style.display = "none";
   }
 }
+
+

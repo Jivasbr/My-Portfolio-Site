@@ -12,20 +12,32 @@ https://jivasbr.github.io/My-Portfolio-Site/
 
 ### Development progress:
 
+
+
+6. 08/09/2022
+
+   * Adjustments to the transition time of some items with hover status in addition to some other fixes.
+   
+   * Added content for the "interests", "education" and "professional" sections.
+   
+   
+
+
 5. 08/01/2022
 
    * Changed the file format of icons for better display, now a filter effect has been applied when hovering a link with an icon.
 
-   - Implementation of section "projects", and "contact-me".
+   * Implementation of section "projects", and "contact-me".
 
-   - In the contact-me section, a small js script was added with input mirroring in the side code snippet. To receive the forms I opted to use the site service: https://formsubmit.co/. A free and simple form submission site.
+   * In the contact-me section, a small js script was added with input mirroring in the side code snippet. To receive the forms I opted to use the site service: https://formsubmit.co/. A free and simple form submission site.
 
-   - For the menu of the projects section, a checkbox system with specific icons was used, according to the original design of the project in Figma. In the content of the "project boxes", some transition, filter, and enlargement effects were applied with CSS.
+   * For the menu of the projects section, a checkbox system with specific icons was used, according to the original design of the project in Figma. In the content of the "project boxes", some transition, filter, and enlargement effects were applied with CSS.
 
-   - Other tweaks and fixes have been made for a better overall display.
-   - The site structure is fully implemented.
-     There are many fixes and improvements to be applied beyond the inclusion of all content and the construction and implementation of adjustments for mobile devices. For now, the display is only adjusted for desktops.
-   - I intend to deepen my studies on frameworks and everything that helps to develop better and faster, because at the moment I develop practically from scratch despite having a lot of help from codepen, stackoverflow, and google in general.
+   * Other tweaks and fixes have been made for a better overall display.
+   * The site structure is fully implemented.
+   * There are many fixes and improvements to be applied beyond the inclusion of all content and the construction and implementation of adjustments for mobile devices. For now, the display is only adjusted for desktops.
+
+   * I intend to deepen my studies on frameworks and everything that helps to develop better and faster, because at the moment I develop practically from scratch despite having a lot of help from codepen, stackoverflow, and google in general.
 
 
 

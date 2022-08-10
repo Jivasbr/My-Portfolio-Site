@@ -1,3 +1,7 @@
+html {
+  height: 100%;
+}
+
 * {
   font-family: 'Fira Code', monospace;
   margin: 0;
@@ -849,18 +853,17 @@ a {
   justify-content: center;
   margin-bottom: 2%;
   background-color: rgb(17, 17, 17, 0.33);
-  font-size: 12px;
+  font-size: 0.8em;
   border-radius: 8px;
   width: 92%;
-  min-height: 28%;
+  min-height: 26%;
   color: #333333;
 }
 
-#simpleline {
+#simpleline{
   width: 90%;
   border-bottom: 1px solid #111111;
-  margin-top: -1%"
-
+  margin-top: 1%;
 }
 
 .textinside_embaixo {
@@ -872,8 +875,8 @@ a {
 }
 
 .decoration {
-  padding-left: 40px;
-  padding-right: 2px;
+  padding-left: 30px;
+  padding-right: 10px;
   margin-left: 10px;
   margin-right: 5px;
   display: flex;
@@ -976,7 +979,6 @@ a {
   margin: 3px;
 }
 
-
 .projectsbox {
   flex-direction: column;
   justify-content: space-between;
@@ -988,41 +990,37 @@ a {
   margin-left: 12px;
   margin-right: 12px;
   margin-bottom: 20px;
-  -webkit-transition: all 1s ease-in-out;
-  -moz-transition: all 1s ease-in-out;
-  -ms-transition: all 1s ease-in-out;
-  -o-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
+  -webkit-transition: all 0.6s ease-in-out;
+  -moz-transition: all 0.6s ease-in-out;
+  -ms-transition: all 0.6s ease-in-out;
+  -o-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out;
 }
 
 .projectsbox:hover {
   width: 450px;
   height: 350px;
-  border: 1px solid #B5B5B5;
-  -webkit-transition: all 1s ease-in-out;
-  -moz-transition: all 1s ease-in-out;
-  -ms-transition: all 1s ease-in-out;
-  -o-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
+  outline: 6px solid #91919108;
+  margin-top: 6pt;
 }
 
 .projectsbox:hover .projectsimages {
   height: 240px;
-  -webkit-transition: all 1.2s ease-in-out;
-  -moz-transition: all 1.2s ease-in-out;
-  -ms-transition: all 1.2s ease-in-out;
-  -o-transition: all 1.2s ease-in-out;
-  transition: all 1.2s ease-in-out;
+  -webkit-transition: all 0.7s ease-in-out;
+  -moz-transition: all 0.7s ease-in-out;
+  -ms-transition: all 0.7s ease-in-out;
+  -o-transition: all 0.7s ease-in-out;
+  transition: all 0.7s ease-in-out;
 }
 
 .projectsbox:hover .projectsboxdown {
   margin-top: 4px;
   margin-bottom: 0px;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .projectsimages {
@@ -1045,11 +1043,11 @@ a {
   z-index: 0;
   margin: 0;
   padding: 0;
-  -webkit-transition: top 3s;
-  -moz-transition: top 3s;
-  -ms-transition: top 3s;
-  -o-transition: top 3s;
-  transition: bottom 3s;
+  -webkit-transition: top 1s;
+  -moz-transition: top 1s;
+  -ms-transition: top 1s;
+  -o-transition: top 1s;
+  transition: bottom 1s;
   filter: grayscale(90%);
 }
 
@@ -1695,14 +1693,34 @@ p {
   color: #ff4463;
 }
 
-.yellowspan {
+.grayspan {
   color: #444444;
 }
 
-.bluespan {
+.yellowspan {
   color: #FFC216;
+}
+
+.whitespan {
+  color: #ffffff;
 }
 
 .divside {
   border-right: 1px solid rgba(1, 1, 1, 0.8);
+}
+
+.external-link{
+  scale: 0.9;
+  margin-left: 8pt;
+  margin-bottom: -2pt;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.external-link:hover img{
+  scale: 1.1;
+  filter: brightness(200%);
 }
