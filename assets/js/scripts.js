@@ -1,3 +1,29 @@
+
+// NavMenu Hamburger
+
+function Hamburger() {
+    var x = document.getElementById("topnav")
+    if (x.className === "menu") {
+        x.className += " responsive";
+    } else {
+        x.className = "menu";
+    }
+  }
+
+// Loader
+
+var myVar;
+
+function onLoad() {
+  myVar = setTimeout(opacityPage, 2000)
+}
+
+function opacityPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.opacity = "1";
+}
+
+
 // About-me Accordion
 
 var accordionMenu = function () {
@@ -111,6 +137,7 @@ function openMenuLink(evt, menuName) {
   for (i = 0; i < tabcontent.length; i++) {
     tabcontent[i].style.display = "none";
   }
+  
   linktopo = document.getElementsByClassName("linktopo");
   for (i = 0; i < linktopo.length; i++) {
     linktopo[i].className = linktopo[i].className.replace(" active", "");
@@ -271,4 +298,14 @@ function boxOpen(x, y) {
   }
 }
 
+// Slide Menu Indicator
+
+var marker = document.querySelector('#marker');
+var item = document.querySelectorAll('.menu a');
+
+function indicator(e){
+marker.style.left = e.offsetLeft + 'px';
+marker.style.width = e.offsetWidth + 'px';
+
+}
 

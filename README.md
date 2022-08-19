@@ -14,6 +14,18 @@ https://jivago.works
 
 
 
+7. 08/19/2022
+
+   * Finished and implemented mobile mode for website viewing.
+   
+   * I Made changes, adjustments and additions within the entire site and restructured the HTML document for better layout in the mobile version.
+
+   * I implemented an initial loading system.
+   
+   * The menu indicator system on desktop version has been implemented but fix will be required for correct functioning.
+
+
+
 6. 08/09/2022
 
    * Adjustments to the transition time of some items with hover status in addition to some other fixes.
