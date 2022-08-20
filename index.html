@@ -23,38 +23,26 @@
             <div class="tab">
                 <header>
                     <div class="menu" id="topnav">
-                        <div id="marker" class="mmarker"></div>
                         <ul class="list-items">
                             <div class="items fg-2">jivago-januario</div>
 
                             <!-- Inicio hello -->
-                            <a href="javascript:void(0)" onclick="openMenuLink(event, 'hello')" class="hidding linktopo active" style="margin-right: -0.5px"
-                            >
-                                <div class="items fg-0">
-                                    <li class="li-topo">_hello</li>
-                                </div>
-                            
-
                             <a href="javascript:void(0)" onclick="openMenuLink(event, 'hello'); Hamburger()" class="mobile linktopo">
                                 <div class=" items fg-0 active">
                                     <li class="li-topo">_hello</li>
                                 </div>
-                            </a></a>
+                            </a>
                             <!-- Fim hello -->
 
                             <!--XXXXXXXXXXXXXXXXXXXXXXX-->
 
                             <!-- Inicio About-me -->
 
-                            <a href="javascript:void(0)" onclick="openMenuLink(event, 'about')" class="hidding linktopo">
-                                <div class="items fg-0">
-                                    <li class="li-topo">_about-me</li>
-                                </div>
                             <a href="javascript:void(0)" onclick="openMenuLink(event, 'aboutmobile')" class="mobile linktopo">
                                 <div class="items fg-0">
                                     <li class="li-topo">_about-me</li>
                                 </div>    
-                            </a></a>
+                            </a>
                             <div id="aboutmobile" class="tab tabcontent" style="display:none">
                                 <div class="generalcontainer">
         
@@ -900,11 +888,6 @@
                             <!-- Fim About-me -->
 
                             <!-- Inicio Projects -->
-                            <a href="javascript:void(0)" onclick="openMenuLink(event, 'projects')" class="hidding linktopo" style="margin-left: -0.5px;">
-                                <div class="items fg-0">
-                                    <li class="li-topo" style="margin-left: 1.5px; margin-right: 1.5px;">_projects</li>
-                                </div>
-                            </a>
                             <a href="javascript:void(0)" onclick="openMenuLink(event, 'projectsmobile')" class="mobile linktopo">
                                 <div class="items fg-0">
                                     <li class="li-topo">_projects</li>
@@ -1136,6 +1119,22 @@
                             </div>
                             
                             <!-- Fim Projects -->
+                            <nav class="menuIndicator">
+                            <a href="javascript:void(0)" onclick="openMenuLink(event, 'hello')" class="hidding linktopo active" style="margin-right: 0.5px;"                            >
+                                
+                                    _hello
+                                
+                            </a>
+                            <a href="javascript:void(0)" onclick="openMenuLink(event, 'about')" class="hidding linktopo">
+                                
+                                    _about-me
+                                
+                            </a>
+                            <a href="javascript:void(0)" onclick="openMenuLink(event, 'projects')" class="hidding linktopo" style="margin-right: 1px; margin-left: 0.5px">
+                                
+                                    _projects
+                                
+                            </a>
 
                             <div class="items fg-3"></div>
                             <div class="items fg-4">
@@ -1154,10 +1153,12 @@
                             
                             <a href="javascript:void(0)" onclick="openMenuLink(event, 'contact')"
                                 class="hidding li-topo-final linktopo">
-                                <div class="items fg-0">
-                                    <li class="li-topo-final">_contact-me</li>
-                                </div>
+                                
+                                    _contact-me
+                                
                             </a>
+                            <div id="marker"></div>
+                        </nav>
                             <a href="javascript:void(0)" onclick="openMenuLink(event, 'contactmobile')"
                             class="mobile li-topo-final linktopo" style="border-top-right-radius: 0px;">
                             <div class="items fg-0">
