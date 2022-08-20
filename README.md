@@ -12,34 +12,35 @@ https://jivago.works
 
 ### Development progress:
 
-8. 08/20/2022
+8 - 08/20/2022
 
    * Adjustments on buttons, margins, text size, and other things on the mobile 
-   
+
    * Fixed the menu indicator in the desktop version. Now, when the main menu is clicked, a colored bar slides according to the selection of the link.
 
-7. 08/19/2022
+
+
+7 - 08/19/2022
 
    * Finished and implemented mobile mode for website viewing.
-   
+
    * I Made changes, adjustments and additions within the entire site and restructured the HTML document for better layout in the mobile version.
 
    * I implemented an initial loading system.
-   
+
    * The menu indicator system on desktop version has been implemented but fix will be required for correct functioning.
 
 
 
-6. 08/09/2022
+6 - 08/09/2022
 
    * Adjustments to the transition time of some items with hover status in addition to some other fixes.
-   
+
    * Added content for the "interests", "education" and "professional" sections.
-   
+
    
 
-
-5. 08/01/2022
+5 - 08/01/2022
 
    * Changed the file format of icons for better display, now a filter effect has been applied when hovering a link with an icon.
 
@@ -57,7 +58,7 @@ https://jivago.works
 
 
 
-4. 07/26/2022 
+4 - 07/26/2022 
 
    * Corrected and adjusted some links/buttons on the site in the light and dark versions.
 
@@ -71,7 +72,7 @@ https://jivago.works
 
 
 
-3. 07/20/2022
+3 - 07/20/2022
 
    * Implemented a tab system with Javascript for content navigation.
 
@@ -80,12 +81,12 @@ https://jivago.works
 
 
 
-2. 07/10/2022
+2 - 07/10/2022
    * I decided to replace the dark/light mode buttons with a switch instead.
 
 
 
-1. 07/08/2022
+1 - 07/08/2022
    * In this early version of the project, a basic homepage structure was created, a general design with 2 animated buttons for dark or light theme options and link buttons for LinkedIn, Github, and Behance. In the future, I will add some more visual details besides implementing the structure and content of the tabs about me, projects, and contact me.
 
 
