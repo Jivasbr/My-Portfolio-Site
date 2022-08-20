@@ -2,13 +2,13 @@
 // NavMenu Hamburger
 
 function Hamburger() {
-    var x = document.getElementById("topnav")
-    if (x.className === "menu") {
-        x.className += " responsive";
-    } else {
-        x.className = "menu";
-    }
+  var x = document.getElementById("topnav")
+  if (x.className === "menu") {
+    x.className += " responsive";
+  } else {
+    x.className = "menu";
   }
+}
 
 // Loader
 
@@ -137,7 +137,7 @@ function openMenuLink(evt, menuName) {
   for (i = 0; i < tabcontent.length; i++) {
     tabcontent[i].style.display = "none";
   }
-  
+
   linktopo = document.getElementsByClassName("linktopo");
   for (i = 0; i < linktopo.length; i++) {
     linktopo[i].className = linktopo[i].className.replace(" active", "");
@@ -303,15 +303,15 @@ function boxOpen(x, y) {
 var marker = document.querySelector('#marker');
 var item = document.querySelectorAll('.menuIndicator a');
 
-function indicator(e){
-marker.style.left = e.offsetLeft + 'px';
-marker.style.width = e.offsetWidth + 'px';
+function indicator(e) {
+  marker.style.left = e.offsetLeft + 'px';
+  marker.style.width = e.offsetWidth + 'px';
 }
 
 item.forEach(Link => {
-Link.addEventListener('click', (e)=>{
+  Link.addEventListener('click', (e) => {
 
-indicator(e.target);
-})
+    indicator(e.target);
+  })
 
 })
