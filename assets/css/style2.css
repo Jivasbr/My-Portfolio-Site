@@ -1844,10 +1844,10 @@ border-right: 1px solid rgba(200, 200, 200, 0.2);
 
   body{
     margin-top: 20px;
-    background-size: cover;
+    background-size:cover;
     background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-position: center;
+    background-attachment: fixed;
+    background-position: top;
     background-color: #d3d3d3;
     backdrop-filter: blur(4px);
   }
@@ -2006,6 +2006,7 @@ border-right: 1px solid rgba(200, 200, 200, 0.2);
 }
 
 /* corpo */
+
 .mobile{
   display: flex;
   width: 100%;
@@ -2105,7 +2106,7 @@ ul#menu-3-1.accordion-menu__sublist{
 }
 
 a#aeduc{
-  background-color: #070707;
+  background-color: inherit;
 }
 
 a#aeduc.accordion-menu__link.accordion-menu {
@@ -2136,7 +2137,7 @@ div#firstsublink{
 }
 
 .menu.responsive a.linkside2 {
-  background-color: #070707;
+  background-color: inherit;
   margin-top: -8px;
   margin-bottom: -8px;
 }
@@ -2171,7 +2172,7 @@ left: -0.95rem;
 }
 
 a.accordion-menu__sublink.linkside{
-  background-color: #070707;
+  background-color: inherit;
   font-size: 1rem;
 }
 
@@ -2200,19 +2201,23 @@ a.accordion-menu__sublink.linkside{
   margin-left: 50px;
 }
 
+input.send{
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
 .campobutton{
   width: fit-content;
   margin-top: 20px;
   padding: 0px;
   margin-left: 12px;
   border: none;
-  background-color: rgba(255, 255, 255, 0);
+  background-color: unset;
 }
 
 .campobutton:hover {
   color: #4CB7F5;
   text-shadow: 0.6px 0.6px 0px #ffffff;
-  background-color: rgba(255, 255, 255, 0);
+  background-color: unset;
   transition: none;
   cursor: pointer;
   border: none;

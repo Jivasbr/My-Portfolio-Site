@@ -1845,10 +1845,10 @@ p {
 
   body{
     margin-top: 20px;
-    background-size: cover;
+    background-size:cover;
     background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-position: center;
+    background-attachment: fixed;
+    background-position: top;
     backdrop-filter: blur(4px);
   }
 
@@ -2005,6 +2005,7 @@ p {
 }
 
 /* corpo */
+
 .mobile{
   display: flex;
   width: 100%;
@@ -2104,7 +2105,7 @@ ul#menu-3-1.accordion-menu__sublist{
 }
 
 a#aeduc{
-  background-color: #070707;
+  background-color: inherit;
 
 }
 
@@ -2136,7 +2137,7 @@ div#firstsublink{
 }
 
 .menu.responsive a.linkside2 {
-  background-color: #070707;
+  background-color: inherit;
   margin-top: -8px;
   margin-bottom: -8px;
 }
@@ -2171,7 +2172,7 @@ left: -0.95rem;
 }
 
 a.accordion-menu__sublink.linkside{
-  background-color: #070707;
+  background-color: inherit;
   font-size: 1rem;
 }
 
