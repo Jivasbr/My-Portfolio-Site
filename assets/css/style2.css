@@ -1933,6 +1933,7 @@ border-right: 1px solid rgba(200, 200, 200, 0.2);
 
   .menu.responsive .linktopo {
     width: 100%;
+    background-color: #f2f2f2;
    }
   
   .items{
@@ -2004,7 +2005,7 @@ border-right: 1px solid rgba(200, 200, 200, 0.2);
     border-top-right-radius: 8px;
   }
 
-.hidding{
+  .hidding{
   display: none;
   width: 0;
   height: 0;
