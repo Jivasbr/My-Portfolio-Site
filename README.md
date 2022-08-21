@@ -12,11 +12,15 @@ https://jivago.works
 
 ### Development progress:
 
+
+
 8 - 08/20/2022
 
    * Adjustments on buttons, margins, text size, and other things on the mobile 
 
    * Fixed the menu indicator in the desktop version. Now, when the main menu is clicked, a colored bar slides according to the selection of the link.
+
+   * Added a animation for mobile menu-nav icon.
 
 
 

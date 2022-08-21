@@ -8,6 +8,7 @@ function Hamburger() {
   } else {
     x.className = "menu";
   }
+
 }
 
 // Loader
