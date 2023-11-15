@@ -2,7 +2,7 @@
 
 This is a Portfolio site under construction (almost concluded) where I apply the new knowledge I'm acquiring, and in the future, I'll show projects from previous design experiences and future programming projects.
 
-
+www.jivago.me
 
 ------
 
